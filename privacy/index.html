@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Privacy Policy — Kognai</title>
+  <title>Privacy Policy — Kael by Kognai</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #0a0a0a; color: #e5e5e5; padding: 2rem; }
@@ -22,57 +22,58 @@
 </head>
 <body>
   <div class="container">
-    <nav><a href="../">← Kognai</a></nav>
+    <nav><a href="../">← Kael by Kognai</a></nav>
     <h1>Privacy Policy</h1>
-    <p class="meta">Effective date: March 15, 2026 &nbsp;·&nbsp; Kognai</p>
+    <p class="meta">Effective date: March 28, 2026 &nbsp;·&nbsp; Kael by Kognai</p>
 
     <h2>1. Overview</h2>
-    <p>This Privacy Policy describes how Kognai ("we", "the Service") handles information when you authorize it to post content to TikTok on your behalf.</p>
+    <p>This Privacy Policy describes how Kael by Kognai ("we", "the Service") handles information when you connect your TikTok account. Kael is a read-only creator intelligence tool — it reads your TikTok profile and stats only and never posts, modifies, or deletes any content.</p>
 
     <h2>2. Information We Access</h2>
-    <p>When you connect your TikTok account, the Service accesses:</p>
+    <p>When you connect your TikTok account via Login Kit, the Service reads the following data using TikTok's approved OAuth scopes:</p>
     <ul>
-      <li><strong>TikTok user identifier</strong> (open_id) — used to associate your account with the Service</li>
-      <li><strong>Content posting permission</strong> — used solely to publish archive media you have authorized</li>
+      <li><strong>user.info.profile</strong>: display name, username, bio description, profile link, and verification status — used to identify the connected creator account</li>
+      <li><strong>user.info.stats</strong>: follower count, following count, total likes, and video count — used to compute your baseline engagement velocity score</li>
     </ul>
-    <p>We do not access your TikTok profile, followers, messages, or any other account data beyond what is required for content posting.</p>
+    <p>We do not access your TikTok messages, comments, direct messages, followers list, or any data beyond the two approved scopes above.</p>
 
     <h2>3. Information We Do Not Collect</h2>
     <ul>
-      <li>We do not collect personal identifying information such as your name, email, or phone number.</li>
-      <li>We do not store TikTok access tokens beyond active session use.</li>
-      <li>We do not sell, rent, or share your information with third parties.</li>
-      <li>We do not use tracking cookies or analytics on this website.</li>
+      <li>We do not collect your name, email address, phone number, or payment information.</li>
+      <li>We do not store TikTok access tokens on any remote server.</li>
+      <li>We do not sell, rent, or share your data with any third parties.</li>
+      <li>We do not use tracking cookies, analytics, or advertising on this website.</li>
+      <li>We do not post, upload, modify, or delete any content on your TikTok account.</li>
     </ul>
 
     <h2>4. How We Use Information</h2>
-    <p>The TikTok user identifier and access token are used exclusively to:</p>
+    <p>The profile and stats data accessed via TikTok Login Kit is used exclusively to:</p>
     <ul>
-      <li>Authenticate API requests to TikTok on your behalf</li>
-      <li>Post content you have authorized to your TikTok account</li>
+      <li>Identify the authorized creator account and link it to Kognai's content scoring pipeline</li>
+      <li>Compute a baseline engagement velocity score (follower count, video count, likes count) refreshed every 24 hours</li>
+      <li>Benchmark content performance against this baseline</li>
     </ul>
 
     <h2>5. Data Storage</h2>
-    <p>The Service runs locally on the authorized user's own machine. TikTok access tokens are stored in the local environment only (`.env` file on the user's device) and are never transmitted to any Kognai server.</p>
+    <p>The Service runs locally on the authorized user's own machine. TikTok access tokens are stored only in the local environment on the user's device and are never transmitted to any external Kognai server. Stats data is stored locally in the user's own Kognai pipeline database.</p>
 
     <h2>6. Third-Party Services</h2>
     <p>The Service interacts with:</p>
     <ul>
-      <li><strong>TikTok</strong> (content posting via Content Posting API v2) — governed by <a href="https://www.tiktok.com/legal/page/global/privacy-policy/en">TikTok's Privacy Policy</a></li>
-      <li><strong>Internet Archive</strong> (media sourcing) — governed by <a href="https://archive.org/about/terms.php">Internet Archive's Terms</a></li>
+      <li><strong>TikTok</strong> — profile and stats read via Login Kit API — governed by <a href="https://www.tiktok.com/legal/page/global/privacy-policy/en">TikTok's Privacy Policy</a></li>
     </ul>
 
     <h2>7. Your Rights</h2>
-    <p>You may revoke the Service's access to your TikTok account at any time through TikTok's settings under "Manage app permissions". Revoking access immediately stops any further posting.</p>
+    <p>You may revoke the Service's access to your TikTok account at any time through TikTok's settings under "Manage app permissions." Revoking access immediately stops any further data access by the Service.</p>
 
     <h2>8. Children's Privacy</h2>
     <p>The Service is not directed at children under 18. We do not knowingly collect information from minors.</p>
 
     <h2>9. Changes</h2>
-    <p>We may update this Privacy Policy. The effective date at the top of this page reflects the most recent update.</p>
+    <p>We may update this Privacy Policy. The effective date at the top reflects the most recent update.</p>
 
     <h2>10. Contact</h2>
-    <p>For privacy-related questions, contact us via <a href="https://github.com/skingem1/kognai">GitHub</a>.</p>
+    <p>For privacy-related questions, contact: <a href="mailto:kognai.ai@proton.me">kognai.ai@proton.me</a></p>
   </div>
 </body>
 </html>

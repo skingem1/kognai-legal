@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Terms of Service — Kognai</title>
+  <title>Terms of Service — Kael by Kognai</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #0a0a0a; color: #e5e5e5; padding: 2rem; }
@@ -22,32 +22,36 @@
 </head>
 <body>
   <div class="container">
-    <nav><a href="../">← Kognai</a></nav>
+    <nav><a href="../">← Kael by Kognai</a></nav>
     <h1>Terms of Service</h1>
-    <p class="meta">Effective date: March 15, 2026 &nbsp;·&nbsp; Kognai</p>
+    <p class="meta">Effective date: March 28, 2026 &nbsp;·&nbsp; Kael by Kognai</p>
 
     <h2>1. Acceptance</h2>
-    <p>By using Kognai ("the Service"), you agree to these Terms of Service. If you do not agree, do not use the Service.</p>
+    <p>By connecting your TikTok account to Kael ("the Service"), you agree to these Terms of Service. If you do not agree, do not use the Service.</p>
 
     <h2>2. Description of Service</h2>
-    <p>Kognai is an autonomous AI content pipeline that discovers publicly available archive media from Internet Archive and publishes it to TikTok on behalf of authorized users. The Service uses the TikTok Content Posting API to post media.</p>
+    <p>Kael is a TikTok Creator Intelligence tool operated by Kognai. It connects to your TikTok account using TikTok Login Kit to read your public profile information and account statistics. The Service uses this data to compute a baseline engagement velocity score for your account, helping you understand content performance over time. Kael is a read-only application — it does not post, upload, modify, or delete any content on your TikTok account.</p>
 
     <h2>3. Eligibility</h2>
     <p>You must be at least 18 years old and have a valid TikTok account to use the Service. You are responsible for your TikTok account and all activity associated with it.</p>
 
-    <h2>4. User Responsibilities</h2>
+    <h2>4. TikTok Data Access</h2>
+    <p>The Service requests the following TikTok permissions via OAuth 2.0:</p>
+    <ul>
+      <li><strong>user.info.profile</strong> — reads your display name, username, bio, and verification status to identify your creator account</li>
+      <li><strong>user.info.stats</strong> — reads your follower count, following count, total likes, and video count to compute engagement baselines</li>
+    </ul>
+    <p>The Service does not request any write, publish, or management permissions. No content is ever posted, modified, or deleted on your behalf.</p>
+
+    <h2>5. User Responsibilities</h2>
     <ul>
       <li>You must provide accurate information when authorizing the Service.</li>
-      <li>You are responsible for the content posted to your TikTok account via the Service.</li>
       <li>You agree to comply with TikTok's Terms of Service and Community Guidelines.</li>
-      <li>You must not use the Service to post content that violates any applicable law or third-party rights.</li>
+      <li>You must not use the Service in any way that violates applicable law or third-party rights.</li>
     </ul>
 
-    <h2>5. TikTok Authorization</h2>
-    <p>The Service requests permission to post content on TikTok on your behalf using OAuth. You may revoke this authorization at any time through TikTok's settings. The Service will not post content without your explicit authorization.</p>
-
-    <h2>6. Content</h2>
-    <p>The Service sources media from Internet Archive, which hosts public domain and openly licensed content. We make reasonable efforts to verify content licensing, but you are ultimately responsible for ensuring the content you post does not infringe any third-party rights.</p>
+    <h2>6. Authorization and Revocation</h2>
+    <p>The Service uses TikTok's OAuth 2.0 flow to request your authorization. You may revoke this authorization at any time through TikTok's app permission settings. Revoking access immediately stops any further data access by the Service.</p>
 
     <h2>7. Limitation of Liability</h2>
     <p>The Service is provided "as is" without warranties of any kind. Kognai shall not be liable for any indirect, incidental, or consequential damages arising from your use of the Service.</p>
@@ -59,7 +63,7 @@
     <p>We may update these Terms from time to time. Continued use of the Service after changes constitutes acceptance of the updated Terms.</p>
 
     <h2>10. Contact</h2>
-    <p>For questions about these Terms, contact us via <a href="https://github.com/skingem1/kognai">GitHub</a>.</p>
+    <p>For questions about these Terms, contact: <a href="mailto:kognai.ai@proton.me">kognai.ai@proton.me</a></p>
   </div>
 </body>
 </html>
